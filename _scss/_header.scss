@@ -1,0 +1,38 @@
+header {
+	height: 100%;
+}
+
+#hero {
+	height: 100%;
+	background: url(../img/hero_bg.jpg) fixed center center;
+	background-size: cover;
+
+	.fixed-navbar {
+		position: fixed;
+		width: 100%;
+		padding: 30px;
+		font-size: 28px;
+
+		.logo {
+			float: left;
+			font-weight: 700;
+
+			p {
+				margin: 0;
+			}
+		}
+
+		.navbar-toggle {
+			float: right;
+		}
+	}
+
+	.hero-content {
+		text-align: center;
+		@include display(flex);
+		@include size(100%);
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+	}
+}
