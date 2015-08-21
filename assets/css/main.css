@@ -729,9 +729,11 @@ header {
 
 footer {
   text-align: center;
-  padding: 1rem;
-  background-size: cover;
-  border-top: 1px solid #e6e6e6; }
+  padding: 2rem;
+  background: #252B35;
+  color: white;
+  font-size: 14px;
+  font-weight: 300; }
 
 * {
   box-sizing: border-box; }
