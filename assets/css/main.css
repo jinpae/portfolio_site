@@ -756,7 +756,7 @@ header {
           -webkit-flex-direction: column;
               -ms-flex-direction: column;
                   flex-direction: column;
-          background: rgba(228, 14, 116, 0.8);
+          background: rgba(26, 212, 198, 0.9);
           opacity: 0;
           -webkit-transition: all 0.3s ease-in-out;
           transition: all 0.3s ease-in-out;
@@ -767,6 +767,8 @@ header {
             font-size: 1.4rem;
             letter-spacing: 6px;
             margin: 0; }
+          #work ul li figure .thumb-overlay .meta {
+            font-size: 14px; }
           #work ul li figure .thumb-overlay p {
             font-weight: 300; }
 
