@@ -606,6 +606,31 @@ th {
   color: #009999; }
 
 /* Literal.Number.Integer.Long */
+.wp1,
+.wp2,
+.wp3,
+.wp4,
+.wp5 {
+  visibility: hidden; }
+
+.fadeInRight,
+.fadeInLeft,
+.fadeInUp,
+.fadeInDown {
+  visibility: visible; }
+
+.delay-05s {
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s; }
+
+.delay-1s {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s; }
+
+.delay-15s {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s; }
+
 header {
   height: 100%; }
 
