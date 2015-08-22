@@ -10,6 +10,10 @@
 @import "contact";
 @import "footer";
 
+::selection {
+	background: #ccf9cd;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -21,6 +25,8 @@ body {
 
 body {
 	font-family: "Open Sans", $helvetica;
+	color: $default-text-color;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.06);
 }
 
 section {
@@ -29,16 +35,33 @@ section {
 
 a {
 	color: inherit;
+	text-decoration: none;
+	@include transition(all .3s ease-in-out);
+
+	&:hover {
+		color: $accent-color;
+	}
 }
 
 p {
-	line-height: 1.6;
+	line-height: 1.7;
 }
 
 .container {
 	max-width: 1200px;
 	padding: 0 20px;
 	margin: 0 auto;
+}
+
+.subtitle {
+	font-size: 1.2rem;
+	text-transform: uppercase;
+}
+
+.text-md {
+	color: $gray-color;
+	font-size: 18px;
+	font-weight: 300;
 }
 
 %clearfix {

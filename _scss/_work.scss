@@ -1,9 +1,19 @@
+@import "colors";
+
 #work-intro {
 	background: #faf9f5;
+
+	a {
+		color: $accent-color;
+
+		&:hover {
+			color: darken($accent-color, 10%);
+		}
+	}
 }
 
 .work-content {
-	width: 500px;
+	max-width: 500px;
 }
 
 #work {
@@ -13,21 +23,61 @@
 	ul {
 		list-style: none;
 		width: 100%;
-		height: 300px;
 		padding: 0;
 		margin: 0;
 		
 		li {
 			float: left;
-			width: 33.3%;
+			width: 33.33%;
 			min-height: 100%;
 
 			figure {
 				width: 100%;
 				margin: 0;
+				overflow: hidden;
+				position: relative;
 
 				img {
-					width: 100%;
+					@include size(100%);
+					vertical-align: middle;
+					@include transition(all .3s ease-in-out);
+				}
+
+				&:hover img {
+					@include transform(scale(1.1));
+				}
+
+				&:hover .thumb-overlay {
+					@include position(absolute, 0px 0px 0px 0px);
+					opacity: 1;
+				}
+
+				.thumb-overlay {
+					overflow: hidden;
+					position: absolute;
+					@include display(flex);
+					align-items: center;
+					justify-content: center;
+					flex-direction: column;
+					background: rgba(228, 14, 116, 0.8);
+					opacity: 0;
+					@include transition(all .3s ease-in-out);
+					color: white;
+
+					h1 {
+						font-weight: 300;
+						text-transform: uppercase;
+						font-size: 1.4rem;
+						letter-spacing: 6px;
+						margin: 0;
+					}
+
+					.description {
+					}
+
+					p {
+						font-weight: 300;
+					}
 				}
 			}
 		}
