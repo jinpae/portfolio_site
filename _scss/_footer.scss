@@ -1,12 +1,21 @@
 footer {
 	text-align: center;
-	padding: 1.5rem;
+	padding: 1.5rem 0;
 	//background: #252B35;
 	//color: white;
 	font-weight: 300;
 	border-top: 1px solid #e6e6e6;
+	@extend %clearfix;
 
 	.fa-heart {
 		color: $pink;
+	}
+
+	.copyright {
+		float: left;
+	}
+
+	.html5-badge {
+		float: right;
 	}
 }

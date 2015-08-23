@@ -716,7 +716,7 @@ header {
       color: #0d7f8c; }
 
 .work-content {
-  max-width: 500px; }
+  max-width: 460px; }
 
 #work {
   padding: 0; }
@@ -817,11 +817,12 @@ header {
       text-align: center;
       line-height: 80px;
       color: white;
-      margin-left: 1.2rem;
+      margin-left: 2rem;
       margin-bottom: 1rem;
       margin-top: 1rem;
       border-radius: 50%; }
     #contact .social-links .linkedin {
+      margin-left: 0;
       background: #0077b5; }
       #contact .social-links .linkedin:hover {
         background: #005582; }
@@ -844,11 +845,15 @@ header {
 
 footer {
   text-align: center;
-  padding: 1.5rem;
+  padding: 1.5rem 0;
   font-weight: 300;
   border-top: 1px solid #e6e6e6; }
   footer .fa-heart {
     color: #ff385b; }
+  footer .copyright {
+    float: left; }
+  footer .html5-badge {
+    float: right; }
 
 .overlay {
   position: fixed;
@@ -939,11 +944,12 @@ p {
   font-size: 18px;
   font-weight: 300; }
 
-#work {
+#work, footer {
   zoom: 1; }
   #work:before,
-  #work:after {
+  footer:before,
+  #work:after, footer:after {
     display: table;
     content: ""; }
-  #work:after {
+  #work:after, footer:after {
     clear: both; }
