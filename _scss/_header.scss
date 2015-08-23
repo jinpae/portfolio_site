@@ -6,6 +6,7 @@ header {
 	height: 100%;
 	background: url(../img/hero_bg.jpg) fixed center center;
 	background-size: cover;
+	color: $header-text-color;
 
 	.lead {
 		h1 {
@@ -13,25 +14,46 @@ header {
 			text-transform: uppercase;
 			margin-bottom: 1rem;
 		}
+
+		p {
+			font-size: 14px;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+		}
 	}
 
 	.fixed-navbar {
 		position: fixed;
 		width: 100%;
 		padding: 30px;
-		font-size: 28px;
+		font-size: 2rem;
+		z-index: 9999;
+		@include transition(background .5s ease-in-out);
 
 		.logo {
 			float: left;
-			font-weight: 700;
+			font-weight: 600;
 
 			p {
 				margin: 0;
+				line-height: 1;
+				cursor: default;
 			}
 		}
 
 		.navbar-toggle {
 			float: right;
+			line-height: 1;
+		}
+	}
+
+	.navbar-with-bg {
+		background: rgba(0,0,0,.9);
+		color: white;
+		@include transition(background .5s ease-in-out);
+
+		a:hover {
+			color: $accent-color;
 		}
 	}
 

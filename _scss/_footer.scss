@@ -1,8 +1,12 @@
 footer {
 	text-align: center;
-	padding: 2rem;
-	background: #252B35;
-	color: white;
-	font-size: 14px;
+	padding: 1.5rem;
+	//background: #252B35;
+	//color: white;
 	font-weight: 300;
+	border-top: 1px solid #e6e6e6;
+
+	.fa-heart {
+		color: $pink;
+	}
 }
