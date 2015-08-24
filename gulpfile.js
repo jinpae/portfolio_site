@@ -70,5 +70,8 @@ gulp.task('default', ['browser-sync', 'watch']);
  * Deploy site build to a gh-pages/master branch.
  */
 gulp.task('deploy', ['jekyll-build'], function() {
-	return gulp.src('./_site/**/*').pipe(deploy({ branch: 'master' }));
+	return gulp.src('./_site/**/*').pipe(deploy({
+															 remoteUrl: 'https://github.com/jinpae/jinpae.github.io.git',
+															 branch: 'master'
+															 }));
 });

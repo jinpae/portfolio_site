@@ -44,12 +44,8 @@
 		
 		li {
 			//float: left;
-			width: 33.3%;
+			width: 33.33%;
 			min-height: 100%;
-
-			&:first-child {
-				width: 33.4%;
-			}
 
 			figure {
 				width: 100%;
@@ -99,8 +95,12 @@
 						margin: 0;
 					}
 
+					.description {
+						font-size: 18px;
+					}
+
 					.meta {
-						font-size: 14px;
+						font-weight: 300;
 					}
 
 					p {
@@ -114,7 +114,7 @@
 	@media only screen and (max-width: 1140px) {
 		ul {
 			li {
-				width: 50% !important;
+				width: 50%;
 			}
 
 			.placeholder {
@@ -126,7 +126,7 @@
 	@media only screen and (max-width: 600px) {
 		ul {
 			li {
-				width: 100% !important;
+				width: 100%;
 			}
 
 			.placeholder {

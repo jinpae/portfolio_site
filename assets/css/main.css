@@ -4,6 +4,7 @@
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic,300italic);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -640,13 +641,12 @@ header {
   background-size: cover;
   color: #e6f5ef; }
   #hero .lead h1 {
-    font-size: 2.2rem;
+    font-size: 3rem;
     text-transform: uppercase;
     margin-bottom: 1rem; }
   #hero .lead p {
-    font-size: 14px;
     text-transform: uppercase;
-    letter-spacing: 3px; }
+    letter-spacing: 2px; }
   #hero .fixed-navbar {
     position: fixed;
     width: 100%;
@@ -751,10 +751,8 @@ header {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
     #work ul li {
-      width: 33.3%;
+      width: 33.33%;
       min-height: 100%; }
-      #work ul li:first-child {
-        width: 33.4%; }
       #work ul li figure {
         width: 100%;
         margin: 0;
@@ -814,18 +812,20 @@ header {
             font-size: 1.4rem;
             letter-spacing: 6px;
             margin: 0; }
+          #work ul li figure .thumb-overlay .description {
+            font-size: 18px; }
           #work ul li figure .thumb-overlay .meta {
-            font-size: 14px; }
+            font-weight: 300; }
           #work ul li figure .thumb-overlay p {
             font-weight: 300; }
   @media only screen and (max-width: 1140px) {
     #work ul li {
-      width: 50% !important; }
+      width: 50%; }
     #work ul .placeholder {
       visibility: visible; } }
   @media only screen and (max-width: 600px) {
     #work ul li {
-      width: 100% !important; }
+      width: 100%; }
     #work ul .placeholder {
       visibility: hidden; } }
 
