@@ -809,15 +809,19 @@ header {
           #work ul li figure .thumb-overlay h1 {
             font-weight: 300;
             text-transform: uppercase;
-            font-size: 1.4rem;
             letter-spacing: 6px;
             margin: 0; }
           #work ul li figure .thumb-overlay .description {
-            font-size: 18px; }
+            font-size: 20px; }
           #work ul li figure .thumb-overlay .meta {
             font-weight: 300; }
           #work ul li figure .thumb-overlay p {
             font-weight: 300; }
+          @media only screen and (max-width: 1380px) {
+            #work ul li figure .thumb-overlay h1 {
+              font-size: 1.4rem; }
+            #work ul li figure .thumb-overlay .description {
+              font-size: 18px; } }
   @media only screen and (max-width: 1140px) {
     #work ul li {
       width: 50%; }
@@ -929,7 +933,7 @@ footer {
       -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
       display: inline-block;
-      margin-bottom: 1rem; }
+      margin: .5rem 0; }
       .overlay ul a:hover {
         color: #1ab; }
 
