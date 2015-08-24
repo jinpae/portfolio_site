@@ -82,7 +82,8 @@
 					align-items: center;
 					justify-content: center;
 					flex-direction: column;
-					background: rgba(26, 212, 198, 0.9);
+					//background: rgba(26, 212, 198, 0.9);
+					background: rgba(54, 61, 72, .9);
 					opacity: 0;
 					@include transition(all .3s ease-in-out);
 					color: white;

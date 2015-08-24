@@ -801,7 +801,7 @@ header {
           -webkit-flex-direction: column;
               -ms-flex-direction: column;
                   flex-direction: column;
-          background: rgba(26, 212, 198, 0.9);
+          background: rgba(54, 61, 72, 0.9);
           opacity: 0;
           -webkit-transition: all 0.3s ease-in-out;
           transition: all 0.3s ease-in-out;
