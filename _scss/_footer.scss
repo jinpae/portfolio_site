@@ -7,6 +7,10 @@ footer {
 	border-top: 1px solid #e6e6e6;
 	@extend %clearfix;
 
+	p {
+		line-height: 1;
+	}
+
 	.fa-heart {
 		color: $pink;
 	}
@@ -17,5 +21,17 @@ footer {
 
 	.html5-badge {
 		float: right;
+	}
+
+	@media only screen and (max-width: 430px) {
+		.copyright {
+			float: none;
+		}
+		
+		.html5-badge {
+			float: none;
+		}
+
+		padding: 1rem 0;
 	}
 }
