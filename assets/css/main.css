@@ -850,6 +850,9 @@ header {
   background: url(../img/quote_bg.jpg) fixed center center;
   background-size: cover;
   color: white; }
+  @media only screen and (max-width: 640px) {
+    #quote {
+      background: url(../img/quote_bg.jpg) no-repeat center center; } }
   #quote .quote {
     font-weight: 300;
     font-style: italic;
