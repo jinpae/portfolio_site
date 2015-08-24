@@ -640,6 +640,11 @@ header {
   background: url(../img/hero_bg.jpg) fixed center center;
   background-size: cover;
   color: #e6f5ef; }
+  @media only screen and (max-width: 640px) {
+    #hero {
+      min-height: 568px;
+      background-size: cover;
+      -webkit-background-size: cover; } }
   #hero .lead h1 {
     font-size: 3rem;
     text-transform: uppercase;
