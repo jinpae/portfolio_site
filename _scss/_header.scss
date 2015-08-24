@@ -1,5 +1,10 @@
 header {
 	height: 100%;
+
+	@media only screen and (max-width: 640px) {
+		min-height: 568px;
+		height: 568px;
+	}
 }
 
 #hero {
@@ -9,6 +14,7 @@ header {
 	color: $header-text-color;
 
 	@media only screen and (max-width: 640px) {
+		background: url(../img/hero_bg.jpg) no-repeat center center;
 		min-height: 568px;
 		background-size: cover;
 		-webkit-background-size: cover;
