@@ -28,6 +28,7 @@ header {
 		font-size: 2rem;
 		z-index: 9999;
 		@include transition(background .5s ease-in-out);
+		@extend %clearfix;
 
 		.logo {
 			float: left;

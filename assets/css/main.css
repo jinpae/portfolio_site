@@ -922,6 +922,9 @@ footer {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     font-size: 4rem; }
+    @media only screen and (max-width: 400px) {
+      .overlay nav {
+        font-size: 1.35rem; } }
   .overlay ul {
     padding: 0;
     margin: 0;
@@ -966,7 +969,7 @@ body {
 body {
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   color: #323232;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.06); }
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.01); }
 
 section {
   padding: 150px 0px; }
@@ -996,12 +999,13 @@ p {
   font-size: 18px;
   font-weight: 300; }
 
-#work, footer {
+#hero .fixed-navbar, #work, footer {
   zoom: 1; }
+  #hero .fixed-navbar:before,
   #work:before,
   footer:before,
-  #work:after, footer:after {
+  #hero .fixed-navbar:after, #work:after, footer:after {
     display: table;
     content: ""; }
-  #work:after, footer:after {
+  #hero .fixed-navbar:after, #work:after, footer:after {
     clear: both; }
