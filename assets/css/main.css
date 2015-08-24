@@ -727,6 +727,8 @@ header {
 
 .work-content {
   max-width: 460px; }
+  .work-content em {
+    color: #ff385b; }
 
 #work {
   padding: 0; }
