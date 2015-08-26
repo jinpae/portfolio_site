@@ -662,7 +662,7 @@ header {
     width: 100%;
     padding: 30px;
     font-size: 2rem;
-    z-index: 9999;
+    z-index: 9;
     -webkit-transition: background 0.5s ease-in-out;
     transition: background 0.5s ease-in-out; }
     #hero .fixed-navbar .logo {
@@ -937,7 +937,7 @@ footer {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     font-size: 4rem; }
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 414px), only screen and (max-height: 414px) {
       .overlay nav {
         font-size: 1.35rem; } }
   .overlay ul {
@@ -965,7 +965,8 @@ footer {
   visibility: visible;
   opacity: 1;
   -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s; }
+  transition: opacity 0.5s;
+  z-index: 999; }
 
 ::-moz-selection {
   background: #ccf9cd; }

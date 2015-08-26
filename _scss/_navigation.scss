@@ -15,7 +15,8 @@
 		@include transform(translateY(-50%));
 		font-size: 4rem;
 
-		@media only screen and (max-width: 400px) {
+		@media only screen and (max-width: 414px),
+		only screen and (max-height: 414px) {
 			font-size: 1.35rem;
 		}
 	}
@@ -50,4 +51,5 @@
 	visibility: visible;
 	opacity: 1;
 	@include transition(opacity .5s);
+	z-index: 999;
 }

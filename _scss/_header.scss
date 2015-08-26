@@ -38,7 +38,7 @@ header {
 		width: 100%;
 		padding: 30px;
 		font-size: 2rem;
-		z-index: 9999;
+		z-index: 9;
 		@include transition(background .5s ease-in-out);
 		@extend %clearfix;
 
